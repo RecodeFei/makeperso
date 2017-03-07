@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customize>
+  <launcher>
+    <Launcher3 path="packages/apps/Launcher3/res">
+        <copyfile path="values/attrs.xml"/>
+        <copyfile path="values-nodpi/wallpapers.xml"/>
+        <copyfile path="values-nodpi/extra_wallpapers.xml"/>
+        <copyfile path="xml/launcher3_default_workspace.xml"/>
+    </Launcher3>
+    <JrdLauncher path="packages/apps/JrdLauncher/res">
+        <copyfile path="values/attrs.xml"/>
+        <copyfile path="values-nodpi/wallpapers.xml"/>
+        <copyfile path="values-nodpi/extra_wallpapers.xml"/>
+        <copyfile path="xml/jrd_default_workspace.xml"/>
+    </JrdLauncher>
+    <TCTLauncher path="vendor/tctalone/TctAppPackage/Launcher/res">
+        <copyfile path="values/attrs.xml"/>
+        <copyfile path="values-nodpi/wallpapers.xml"/>
+        <copyfile path="values-nodpi/extra_wallpapers.xml"/>
+        <copyfile path="xml/jrd_default_workspace.xml"/>
+        <copyfile path="xml/jrd_default_workspace_operator.xml"/>
+    </TCTLauncher>
+  </launcher>
+  <feature>
+    <compass sdmid="ro.hardware.compass.enable" feature="android.hardware.sensor.compass" xmlfile="system/etc/permissions/android.hardware.sensor.compass.xml"/>
+    <gyroscope sdmid="ro.hardware.gyroscope.enable" feature="android.hardware.sensor.gyroscope" xmlfile="system/etc/permissions/android.hardware.sensor.gyroscope.xml"/>
+    <lightsensor sdmid="ro.hardware.lightsensor.enable" feature="android.hardware.sensor.light" xmlfile="system/etc/permissions/android.hardware.sensor.light.xml"/>
+    <autofocus sdmid="ro.tct.autofocus.enable" feature="android.hardware.camera.autofocus" xmlfile="system/etc/permissions/android.hardware.camera.flash-autofocus.xml"/>
+  </feature>
+  <nfc>
+    <filelist path="system/app/NfcNci"/>
+    <filelist path="system/app/SmartcardService"/>
+    <filelist path="system/app/TctGsmaService"/>
+    <filelist path="system/etc/permissions/android.hardware.nfc.xml"/>
+    <filelist path="system/etc/permissions/android.hardware.nfc.hce.xml"/>
+    <filelist path="system/lib/libnfc-nci.so"/>
+    <filelist path="system/lib/libnfc_nci_jni.so"/>
+    <filelist path="system/lib/libnfctester_jni.so"/>
+    <filelist path="system/lib/hw/nfc_nci.bcm2079x.default.so"/>
+    <filelist path="system/framework/org.simalliance.openmobileapi.jar"/>
+    <filelist path="system/framework/com.gsma.services.nfc.jar"/>
+  </nfc>
+</customize>

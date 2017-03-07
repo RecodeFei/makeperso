@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package_list>
+  <package name="Contacts">
+    <res path="vendor/tctalone/apps/ContactsCommon/res"/>
+    <res path="vendor/tctalone/apps/PhoneCommon/res"/>
+  </package>
+  <package name="Dialer">
+    <res path="vendor/tctalone/apps/ContactsCommon/res"/>
+    <res path="vendor/tctalone/apps/InCallUI/res"/>
+    <res path="vendor/tctalone/apps/PhoneCommon/res"/>
+  </package>
+  <package name="Email">
+    <res path="frameworks/opt/chips/res"/>
+    <res path="vendor/tctalone/apps/Email/UnifiedEmail/res"/>
+  </package>
+  <package name="Mms">
+    <res path="frameworks/opt/chips/res"/>
+  </package>
+  <package name="SystemUI">
+    <res path="frameworks/base/packages/Keyguard/res"/>
+    <res path="frameworks/base/packages/SettingsLib/res"/> 
+  </package>
+  <package name="TeleService">
+    <res path="vendor/tctalone/apps/PhoneCommon/res"/>
+    <res path="packages/apps/PhoneCommon/res"/>
+  </package>
+  <package name="LauncherM">
+    <res path="vendor/tct/source/apps/LauncherM/WallpaperPicker/res"/>
+  </package>
+  <package name="Settings">
+    <res path="frameworks/opt/setupwizard/navigationbar/res"/>
+    <res path="frameworks/opt/setupwizard/library/main/res"/>
+    <res path="frameworks/base/packages/SettingsLib/res"/>
+  </package>
+</package_list>
